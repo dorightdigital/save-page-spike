@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Save Page Spike",
+  "version": "0.1",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "http://localhost:*/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "http://localhost:*/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
